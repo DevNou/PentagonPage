@@ -7,7 +7,7 @@
 
 /* theme color */
 :root{
-    --primary: #ff4000 ;
+    --primary: #f77f00 ;
 }
 
 body{
@@ -56,3 +56,53 @@ header{
 
 
 /* search navBar */
+
+.search {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.search:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search ion-icon{
+    font-size: 2em;
+    color:#000000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.search ion-icon:hover{
+    color:var(--primary)
+}
+.search input{
+    display: none;
+    background-color: #8b8c89;
+}
+
+.search.active{
+    width: 300px;
+    border-radius: 50px;
+    justify-content: flex-start;
+}
+.search.active input{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.nav-mobile{
+    display: none;
+}

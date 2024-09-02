@@ -4,29 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Pentagon Backpack Landing page</title>
     <style>
-        .logo img{
-            height:40px;
+        .logo img {
+            height: 40px;
             width: auto;
         }
     </style>
 </head>
 
 <body>
+    <!-- The navigation and menu -->
     <header>
         <a href="#" class="logo">
             <img src="images/Pentagon.png" alt="Pentagon Logo">
         </a>
+        <div class="search">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="bar">
+            <ul class="nav">
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Backpacks and Bags</a></li>
+                <li><a href="#">Footwear</a></li>
+            </ul>
+            <div class="check-out">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="number">4</span>
+            </div>
+            <div class="menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+
+        <ul class="nav-mobile">
+        <li><a href="#">Clothes</a></li>
+                <li><a href="#">Backpacks and Bags</a></li>
+                <li><a href="#">Footwear</a></li>
+        </ul>
     </header>
 
 
 
     <!-- Icon script ionicons  -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

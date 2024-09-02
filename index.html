@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Pentagon Backpack Landing page</title>
+    <style>
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The navigation and menu -->
+    <header>
+        <a href="#" class="logo" id="logo">
+            <img src="/images/Pentagon.png" alt="pentagonLogo">
+        </a>
+        <div class="search" onclick="toggleSearch();">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="SEARCH">
+        </div>
+        <div class="bar">
+            <ul class="nav">
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Backpacks and Bags</a></li>
+                <li><a href="#">Footwear</a></li>
+            </ul>
+            <div class="check-out">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="number">4</span>
+            </div>
+            <div class="menu">
+                <a class="menu" onClick="toggleMenu();" href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+            </div>
+        </div>
+       
+
+
+        <ul class="nav-mobile">
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Backpacks and Bags</a></li>
+            <li><a href="#">Footwear</a></li>
+        </ul>
+    </header>
+    <!-- banner -->
+    <div class="banner">
+        <div class="content">
+            <h1>Be <ion-icon name="earth-outline"></ion-icon></h1>
+            <h2>Adventurous</h2>
+        </div>
+        <div class="imgBox">
+            <div class="backpack">
+                <img src="/images/Man.png" alt="" class="backpack-img">
+            </div>
+            <div class="description">
+                <h3>
+                    Consul 27LT Backpack
+                </h3>
+                <p>
+                    Your ultimate companion for navigating the urban jungle, from bustling city streets to high-stakes
+                    missions. Whether you're commuting to the office, traveling through airports, or tackling outdoor
+                    adventures, the Consul Backpack is engineered for the modern-day hero who demands both style and
+                    functionality.
+                </p>
+                <p>
+                <h3>DIMENSIONS:</h3>
+                <ul>
+                    <li>Width: 30 cm (11.81”)</li>
+                    <li> Depth: 22 cm (8.66”)</li>
+                    <li>Volume: 27 L</li>
+                </ul>
+                </p>
+                <span class="price">€149,95</span>
+            </div>
+        </div>
+        <!--main button -->
+        <a href="#" class="btn" onclick="toggleFlip();">
+            learn more <ion-icon name="search-circle-outline"></ion-icon>
+        </a>
+
+        <!-- order button -->
+        <span class="order"><ion-icon name="bag-add-outline"></ion-icon></span>
+
+        <div class="selections">
+            <div class="circle">
+                <div class="options one" onclick="changeImg('backpack-1.png');">
+                    <img src="/images/backpack-1.png" alt="blackColor">
+                </div>
+                <div class="options two" onclick="changeImg('backpack-2.png');">
+                    <img src="/images/backpack-2.png" alt="blueColor">
+                </div>
+                <div class="options three" onclick="changeImg('backpack-3.png');">
+                    <img src="/images/backpack-3.png" alt="otherColor">
+                </div>
+            </div>
+            <h1>Choose Color</h1>
+        </div>
+    </div>
+
+
+    <ul class="sci">
+        <li>
+            <a href="https://www.facebook.com/PentagonTactical/
+" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/pentagon.tactical/?hl=en
+" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/PentagonSA" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+        </li>
+    </ul>
+    <!-- <a class="menu" onClick="toggleMenu();" href="#"
+><ion-icon name="ellipsis-vertical-outline"></ion-icon
+></a>  -->
+
+    <footer>
+        <div class="copyright">
+            &copy : Copyright <strong><span>Arsenis Chatziantoniou</span></strong>
+        </div>
+    </footer>
+    <!-- Icon script ionicons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/script.js"></script>
+
+
+</body>
+
+</html>

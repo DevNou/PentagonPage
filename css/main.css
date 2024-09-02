@@ -458,6 +458,7 @@ banner content title */
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .banner .selections .options:active{
@@ -478,4 +479,46 @@ banner content title */
     bottom:2%;
     right:75%;
     
+}
+
+/* social icons */
+
+.sci{
+    position: absolute;
+    left:100px;
+    bottom:60px;
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+
+}
+
+.sci li{
+    list-style: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    background: #8b8c89;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sci li:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sci ion-icon{
+    color:#000000;
+    font-size: 1.5em;
+    transition: 0.3s;
+    padding: 5px;
+
+}
+
+.sci ion-icon:hover{
+    color:var(--primary)
 }

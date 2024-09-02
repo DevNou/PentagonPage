@@ -12,3 +12,10 @@ function toggleFlip(){
     imgBox.classList.toggle('active');
     btn.classList.toggle('active');
 }
+
+// swap
+
+function changeImg(img){
+    const backpackImg = document.querySelector('.backpack-img');
+    backpackImg.src = `../images/${img}`;
+}
